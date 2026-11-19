@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>STEM Kerala — KERALA THINKS DIFFERENT!</title>
+  <meta name="title" content="STEM Kerala — KERALA THINKS DIFFERENT!">
+  <meta name="description" content="Science, Technology, Engineering and Mathematics — empowering curious minds across Kerala to imagine, experiment, create and build the future. Pre-register for an exclusive 20% early-bird offer.">
+  <meta name="theme-color" content="#FFE500">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Google Fonts: Manrope & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       BRAND LOADING SCREEN — "KERALA THINKS DIFFERENT!"
+       Full-screen, premium branded loading experience using STEM Kerala brand identity.
+       Tagline animation replaces generic spinners across initial load & registrations.
+       ========================================================================= -->
+  <div class="brand-loading-screen active animate-active" id="brandLoadingScreen" role="status" aria-live="polite" aria-label="Loading STEM Kerala">
+    <!-- Subtle flowing Kerala-inspired green wave / landscape layers -->
+    <div class="brand-loader-landscape" aria-hidden="true">
+      <svg class="brand-wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,192L60,181.3C120,171,240,149,360,154.7C480,160,600,192,720,181.3C840,171,960,117,1080,112C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" fill="#003B22" fill-opacity="0.10" />
+      </svg>
+      <svg class="brand-wave wave-mid" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,170.7C960,181,1056,171,1152,144C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#00512E" fill-opacity="0.16" />
+      </svg>
+      <svg class="brand-wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,218.7C672,235,768,245,864,229.3C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#00512E" fill-opacity="0.22" />
+      </svg>
+    </div>
+
+    <!-- Center Content Wrap -->
+    <div class="brand-loader-content">
+      <!-- Elegant Logo Badge -->
+      <div class="brand-loader-logo-wrap">
+        <img src="logo.png" alt="STEM Kerala Official Logo" class="brand-loader-logo">
+        <span class="brand-loader-badge-text">STEM KERALA</span>
+      </div>
+
+      <!-- Tagline Typographic Lockup -->
+      <div class="brand-loader-tagline" aria-label="KERALA THINKS DIFFERENT!">
+        <!-- 1. KERALA with character-by-character reveal -->
+        <div class="tagline-kerala" aria-label="Kerala">
+          <span class="tagline-char" style="--char-idx: 0">K</span>
+          <span class="tagline-char" style="--char-idx: 1">E</span>
+          <span class="tagline-char" style="--char-idx: 2">R</span>
+          <span class="tagline-char" style="--char-idx: 3">A</span>
+          <span class="tagline-char" style="--char-idx: 4">L</span>
+          <span class="tagline-char" style="--char-idx: 5">A</span>
+        </div>
+
+        <!-- 2. THINKS with subtle sliding animation -->
+        <div class="tagline-thinks">THINKS</div>
+
+        <!-- 3. DIFFERENT! with beautiful scale-up and reveal effect -->
+        <div class="tagline-different">DIFFERENT!</div>
+      </div>
+
+      <!-- Subtle Kerala Energy / Ambient Line -->
+      <div class="brand-loader-energy-wrap" aria-hidden="true">
+        <div class="brand-loader-energy-bar"></div>
+      </div>
+
+      <!-- Context status line -->
+      <p class="brand-loader-status" id="brandLoaderStatus">
+        Empowering curious minds across Kerala
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CLEAN MINIMAL HEADER
+       STEM Kerala official logo, essential links, and quick registration CTA
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-wrapper" aria-label="STEM Kerala Home">
+        <img src="logo.png" alt="STEM Kerala Official Logo" class="brand-logo-img">
+        <div class="brand-title-text">
+          <span>STEM KERALA</span>
+          <span class="brand-subline">Kerala Thinks Different</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="header-nav" id="mainNavMenu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#offer" class="nav-link">20% Offer</a>
+        <a href="#why-stem" class="nav-link">Why STEM Kerala</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#media" class="nav-link">Media</a>
+        <button type="button" class="btn-header-cta" data-open-form="student">
+          <span>Register Now</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       B. THE BUTTERFLY SURPRISE CONTAINER
+       Spawns 25-30 fluttering butterflies across the viewport when visitor scrolls
+       ========================================================================= -->
+  <div class="butterfly-swarm-container" id="butterflySwarmContainer" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       A. FULL-VIEWPORT HERO (100VH / 100SVH)
+       Framed by two enormous coconut trees spanning full viewport height,
+       Western Ghats backdrop, flying birds, flowing river and Kettuvallam
+       ========================================================================= -->
+  <section class="hero-full-viewport" id="hero">
+    <div class="hero-landscape-stage" aria-hidden="true">
+      
+      <!-- Western Ghats Mountains Silhouette -->
+      <svg class="ghats-silhouette" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,192L60,181.3C120,171,240,149,360,154.7C480,160,600,192,720,181.3C840,171,960,117,1080,112C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" fill="#003B22"/>
+        <path d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,133.3C672,128,768,160,864,170.7C960,181,1056,171,1152,144C1248,117,1344,75,1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" fill="#00512E" opacity="0.45"/>
+      </svg>
+
+      <!-- Distant Birds in Sky -->
+      <div class="sky-birds-layer">
+        <svg class="bird-flock" width="160" height="40" viewBox="0 0 160 40" fill="none">
+          <g transform="translate(10, 15) scale(0.65)">
+            <path class="bird-wing-l" d="M0,10 Q10,0 20,8" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path class="bird-wing-r" d="M20,8 Q30,0 40,10" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </g>
+          <g transform="translate(55, 5) scale(0.55)">
+            <path class="bird-wing-l" d="M0,10 Q10,0 20,8" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path class="bird-wing-r" d="M20,8 Q30,0 40,10" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </g>
+          <g transform="translate(100, 20) scale(0.6)">
+            <path class="bird-wing-l" d="M0,10 Q10,0 20,8" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path class="bird-wing-r" d="M20,8 Q30,0 40,10" stroke="#003B22" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Enormous Left Coconut Palm Framing Full 100vh -->
+      <div class="hero-palm-framing hero-palm-left">
+        <svg viewBox="0 0 520 950" fill="none" xmlns="http://www.w3.org/2000/svg" class="palm-svg-full" preserveAspectRatio="xMinYMax meet">
+          <defs>
+            <linearGradient id="fullTrunkLeft" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#043818" />
+              <stop offset="40%" stopColor="#054e22" />
+              <stop offset="75%" stopColor="#075525" />
+              <stop offset="100%" stopColor="#08752D" />
+            </linearGradient>
+            <linearGradient id="frondGradLeftFull" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0a8e38" />
+              <stop offset="50%" stopColor="#08752D" />
+              <stop offset="85%" stopColor="#075525" />
+              <stop offset="100%" stopColor="#043316" />
+            </linearGradient>
+            <linearGradient id="frondHighlightLeftFull" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0fb047" />
+              <stop offset="60%" stopColor="#08752D" />
+              <stop offset="100%" stopColor="#05451e" />
+            </linearGradient>
+          </defs>
+          <g>
+            <!-- Curved Trunk Spanning Full Height -->
+            <path d="M 50 950 C 65 820, 85 700, 115 570 C 145 440, 185 320, 240 215 L 262 218 C 210 330, 175 450, 148 580 C 120 710, 105 830, 95 950 Z" fill="url(#fullTrunkLeft)"/>
+            <path d="M 68 890 Q 82 894 92 892" stroke="#032711" strokeWidth="3" strokeLinecap="round" />
+            <path d="M 73 850 Q 88 854 98 851" stroke="#032711" strokeWidth="2.8" strokeLinecap="round" />
+            <path d="M 80 805 Q 96 809 106 806" stroke="#032711" strokeWidth="2.8" strokeLinecap="round" />
+            <path d="M 88 760 Q 104 764 114 761" stroke="#032711" strokeWidth="2.6" strokeLinecap="round" />
+            <path d="M 97 715 Q 114 719 124 715" stroke="#032711" strokeWidth="2.6" strokeLinecap="round" />
+            <path d="M 108 670 Q 125 674 135 670" stroke="#032711" strokeWidth="2.5" strokeLinecap="round" />
+            <path d="M 119 625 Q 137 629 146 625" stroke="#032711" strokeWidth="2.5" strokeLinecap="round" />
+            <path d="M 132 580 Q 150 584 159 580" stroke="#032711" strokeWidth="2.4" strokeLinecap="round" />
+            <path d="M 146 535 Q 164 539 173 534" stroke="#032711" strokeWidth="2.4" strokeLinecap="round" />
+            <path d="M 161 490 Q 179 494 188 489" stroke="#032711" strokeWidth="2.2" strokeLinecap="round" />
+            <path d="M 178 440 Q 196 444 204 439" stroke="#032711" strokeWidth="2.2" strokeLinecap="round" />
+            <path d="M 197 390 Q 215 394 222 388" stroke="#032711" strokeWidth="2.0" strokeLinecap="round" />
+            <path d="M 218 335 Q 235 339 241 333" stroke="#032711" strokeWidth="2.0" strokeLinecap="round" />
+            <path d="M 238 275 Q 252 278 257 273" stroke="#032711" strokeWidth="1.8" strokeLinecap="round" />
+          </g>
+          <!-- Detailed Canopy Assembly with subtle leaf circuit traces -->
+          <g class="left-crown-motion">
+            <ellipse cx="241" cy="223" rx="14" ry="17" transform="rotate(-15 241 223)" fill="#043818" stroke="#064f22" strokeWidth="1.5" />
+            <ellipse cx="259" cy="227" rx="15" ry="18" transform="rotate(10 259 227)" fill="#064f22" stroke="#032711" strokeWidth="1.5" />
+            <ellipse cx="225" cy="231" rx="13" ry="16" transform="rotate(-28 225 231)" fill="#08752D" stroke="#043818" strokeWidth="1.5" />
+            <ellipse cx="249" cy="239" rx="13" ry="16" transform="rotate(5 249 239)" fill="#05451e" stroke="#032711" strokeWidth="1.5" />
+            <path d="M 227 215 Q 247 210 263 213 Q 253 227 231 223 Z" fill="#032711" opacity="0.8" />
+
+            <!-- Frond 1 with subtle integrated circuitry -->
+            <path d="M 250 215 Q 200 120 130 50 Q 80 8 30 0" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 250 215 C 220 180, 180 130, 130 50 C 110 32, 70 12, 30 0 C 45 22, 60 48, 80 80 C 115 130, 160 190, 245 222 Z" fill="url(#frondGradLeftFull)" />
+            <path d="M 120 45 L 85 85 M 140 62 L 105 105 M 165 85 L 130 132 M 190 115 L 155 162 M 215 150 L 185 195" stroke="#064f22" strokeWidth="2.5" strokeLinecap="round" />
+            <!-- Circuit trace accent on frond -->
+            <circle cx="85" cy="85" r="2.5" fill="#FFE500" opacity="0.7"/>
+            <circle cx="105" cy="105" r="2.5" fill="#FFE500" opacity="0.7"/>
+
+            <!-- Frond 2 Arching Right -->
+            <path d="M 250 215 Q 310 130 380 90 Q 430 70 490 65" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 250 215 C 290 160, 350 110, 420 80 C 450 70, 475 66, 490 65 C 460 85, 415 110, 360 145 C 310 180, 275 205, 252 220 Z" fill="url(#frondHighlightLeftFull)" />
+            <path d="M 320 130 L 345 165 M 350 110 L 380 148 M 380 98 L 415 132 M 420 85 L 455 115 M 455 75 L 480 100" stroke="#05451e" strokeWidth="2.5" strokeLinecap="round" />
+            <circle cx="380" cy="98" r="2.5" fill="#FFE500" opacity="0.7"/>
+
+            <!-- Frond 3 Broad Left Sweep -->
+            <path d="M 248 216 Q 160 180 90 200 Q 30 220 0 270" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 248 216 C 180 175, 120 190, 60 220 C 25 240, 5 260, 0 270 C 18 275, 45 260, 85 245 C 140 225, 195 220, 246 226 Z" fill="url(#frondGradLeftFull)" />
+
+            <!-- Frond 4 Mid-Right Cascade -->
+            <path d="M 252 218 Q 340 220 410 250 Q 470 280 510 340" stroke="#043818" strokeWidth="3.2" strokeLinecap="round" fill="none" />
+            <path d="M 252 218 C 310 215, 380 235, 440 275 C 475 300, 498 325, 510 340 C 485 345, 440 325, 385 295 C 330 265, 280 240, 250 226 Z" fill="url(#frondGradLeftFull)" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Enormous Right Coconut Palm Framing Full 100vh -->
+      <div class="hero-palm-framing hero-palm-right">
+        <svg viewBox="0 0 520 950" fill="none" xmlns="http://www.w3.org/2000/svg" class="palm-svg-full" preserveAspectRatio="xMaxYMax meet">
+          <defs>
+            <linearGradient id="fullTrunkRight" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stopColor="#043818" />
+              <stop offset="45%" stopColor="#054e22" />
+              <stop offset="75%" stopColor="#075525" />
+              <stop offset="100%" stopColor="#08752D" />
+            </linearGradient>
+            <linearGradient id="frondGradRightFull" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#0a8e38" />
+              <stop offset="50%" stopColor="#08752D" />
+              <stop offset="85%" stopColor="#075525" />
+              <stop offset="100%" stopColor="#043316" />
+            </linearGradient>
+            <linearGradient id="frondHighlightRightFull" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#0fb047" />
+              <stop offset="60%" stopColor="#08752D" />
+              <stop offset="100%" stopColor="#05451e" />
+            </linearGradient>
+          </defs>
+          <g>
+            <!-- Trunk Full Height -->
+            <path d="M 465 950 C 450 810, 430 680, 395 550 C 360 420, 315 310, 260 225 L 238 228 C 290 325, 330 435, 360 565 C 390 695, 410 820, 420 950 Z" fill="url(#fullTrunkRight)"/>
+            <path d="M 448 895 Q 435 898 425 895" stroke="#032711" strokeWidth="3" strokeLinecap="round" />
+            <path d="M 440 852 Q 426 856 416 852" stroke="#032711" strokeWidth="2.8" strokeLinecap="round" />
+            <path d="M 432 808 Q 418 812 408 808" stroke="#032711" strokeWidth="2.8" strokeLinecap="round" />
+            <path d="M 423 762 Q 409 766 399 762" stroke="#032711" strokeWidth="2.6" strokeLinecap="round" />
+            <path d="M 412 718 Q 398 722 388 717" stroke="#032711" strokeWidth="2.6" strokeLinecap="round" />
+            <path d="M 399 672 Q 384 676 375 671" stroke="#032711" strokeWidth="2.5" strokeLinecap="round" />
+            <path d="M 386 626 Q 371 630 361 625" stroke="#032711" strokeWidth="2.5" strokeLinecap="round" />
+            <path d="M 370 580 Q 355 584 346 579" stroke="#032711" strokeWidth="2.4" strokeLinecap="round" />
+          </g>
+          <g class="right-crown-motion">
+            <ellipse cx="229" cy="233" rx="14" ry="17" transform="rotate(18 229 233)" fill="#043818" stroke="#064f22" strokeWidth="1.5" />
+            <ellipse cx="251" cy="239" rx="15" ry="18" transform="rotate(-8 251 239)" fill="#064f22" stroke="#032711" strokeWidth="1.5" />
+            <ellipse cx="217" cy="245" rx="13" ry="16" transform="rotate(25 217 245)" fill="#05451e" stroke="#043818" strokeWidth="1.5" />
+            <ellipse cx="241" cy="251" rx="14" ry="17" transform="rotate(-12 241 251)" fill="#08752D" stroke="#032711" strokeWidth="1.5" />
+
+            <!-- Frond R1 -->
+            <path d="M 250 225 Q 180 135 110 95 Q 60 75 0 70" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 250 225 C 200 165 140 115 70 85 C 40 75 15 71 0 70 C 30 90 75 115 130 150 C 180 185 215 210 242 228 Z" fill="url(#frondHighlightRightFull)" />
+            <circle cx="110" cy="95" r="2.5" fill="#FFE500" opacity="0.7"/>
+
+            <!-- Frond R2 -->
+            <path d="M 250 225 Q 310 125 380 55 Q 430 12 485 0" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 250 225 C 278 185, 320 135, 370 55 C 390 37, 430 17, 485 0 C 470 24, 455 50, 435 82 C 400 132, 355 192, 255 230 Z" fill="url(#frondGradRightFull)" />
+            <circle cx="380" cy="55" r="2.5" fill="#FFE500" opacity="0.7"/>
+
+            <!-- Frond R3 -->
+            <path d="M 252 226 Q 340 185 410 205 Q 470 225 505 275" stroke="#043818" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            <path d="M 252 226 C 320 180, 380 195, 440 225 C 475 245, 495 265, 505 275 C 487 280, 460 265, 420 250 C 365 230, 310 225, 254 234 Z" fill="url(#frondGradRightFull)" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Flowing River & Kerala Houseboat (Kettuvallam) with Tech Beacon -->
+      <div class="hero-river-layer">
+        <svg class="river-water-svg" viewBox="0 0 1440 220" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="riverGradFull" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#004D38" stopOpacity="0.85"/>
+              <stop offset="100%" stopColor="#003322" stopOpacity="0.95"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Paddy fields embankment with small village houses & circuit nodes -->
+          <path d="M0,70 Q360,40 720,60 Q1080,80 1440,55 L1440,220 L0,220 Z" fill="#044524" opacity="0.55"/>
+          
+          <!-- Small Kerala village houses along riverbank -->
+          <g opacity="0.6">
+            <!-- Village house 1 -->
+            <polygon points="180,48 195,36 210,48" fill="#8B2500"/>
+            <rect x="183" y="48" width="24" height="14" fill="#FFFCE8"/>
+            <!-- Village house 2 -->
+            <polygon points="1220,55 1235,42 1250,55" fill="#8B2500"/>
+            <rect x="1223" y="55" width="24" height="14" fill="#FFFCE8"/>
+          </g>
+
+          <!-- Glowing tech nodes along riverbank -->
+          <circle class="river-circuit-node" cx="290" cy="55" fill="#FFE500"/>
+          <circle class="river-circuit-node" cx="580" cy="62" fill="#FFE500"/>
+          <circle class="river-circuit-node" cx="890" cy="72" fill="#FFE500"/>
+
+          <!-- River Stream Waves -->
+          <path class="water-wave-1" d="M0,100 C320,70 640,120 960,90 C1280,60 1440,105 1440,105 L1440,220 L0,220 Z" fill="url(#riverGradFull)"/>
+          <path class="water-wave-2" d="M0,125 C360,105 720,140 1080,115 C1320,95 1440,130 1440,130 L1440,220 L0,220 Z" fill="#003B22" opacity="0.95"/>
+
+          <!-- Water stream highlight ripples -->
+          <path d="M150,145 Q240,140 330,145" stroke="#FFE500" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+          <path d="M620,160 Q740,155 860,160" stroke="#FFE500" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+          <path d="M1050,150 Q1180,145 1280,150" stroke="#FFE500" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+
+          <!-- Traditional Kerala Houseboat (Kettuvallam) with small Robotics Beacon -->
+          <g class="houseboat-group" transform="translate(100, 105)">
+            <path d="M10,25 C45,28 115,28 150,25 C165,24 175,18 180,12 C170,18 150,34 90,34 C30,34 10,18 0,12 C5,18 15,24 10,25 Z" fill="#021C0E"/>
+            <path d="M28,24 C32,2 50,0 90,0 C130,0 148,2 152,24 Z" fill="#05451E"/>
+            <path d="M38,24 C42,4 58,2 90,2 C122,2 138,4 142,24 Z" fill="#075C29" opacity="0.75"/>
+            <rect x="52" y="10" width="8" height="9" rx="1.5" fill="#FFE500" opacity="0.85"/>
+            <rect x="72" y="10" width="8" height="9" rx="1.5" fill="#FFE500" opacity="0.85"/>
+            <rect x="92" y="10" width="8" height="9" rx="1.5" fill="#FFE500" opacity="0.85"/>
+            <rect x="112" y="10" width="8" height="9" rx="1.5" fill="#FFE500" opacity="0.85"/>
+            <!-- Subtle technology beacon -->
+            <circle cx="165" cy="16" r="3" fill="#FFE500" class="river-circuit-node"/>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Center Hero Content (Always visible without scrolling) -->
+    <div class="hero-center-content">
+      <div class="hero-text-overlay" aria-hidden="true"></div>
+
+      <!-- Mobile-Specific STEM Kerala Brand Header -->
+      <div class="mobile-hero-brand" aria-label="STEM Kerala">
+        <img src="logo.png" alt="STEM Kerala Official Logo" class="mobile-hero-brand-logo">
+        <span class="mobile-hero-brand-title">STEM KERALA</span>
+      </div>
+
+      <!-- OFFICIAL BRAND TAGLINE BADGE (Desktop) -->
+      <div class="hero-tagline-badge">
+        <i class="bi bi-lightning-charge-fill"></i>
+        <span>Official Pre-Registration 2026</span>
+      </div>
+
+      <!-- Prominent Main Headline -->
+      <h1 class="hero-main-title">
+        KERALA THINKS DIFFERENT!
+      </h1>
+
+      <!-- Supporting Headline -->
+      <p class="hero-supporting-headline">
+        The Next Wave of Innovation Starts Here.
+      </p>
+
+      <!-- Short Description -->
+      <p class="hero-description">
+        Explore Coding, Robotics, AI and hands-on STEM learning.
+      </p>
+
+      <!-- Two Large, Accessible Registration Options -->
+      <div class="central-reg-grid">
+        <!-- Option 1: Student Registration -->
+        <div class="reg-choice-card reg-choice-student">
+          <div class="reg-card-content">
+            <h2 class="reg-card-title">Are You Ready to Create?</h2>
+            <p class="reg-card-desc">
+              Start your journey into Coding, Robotics, AI and hands-on STEM learning.
+            </p>
+          </div>
+          <button type="button" class="btn-reg-action" data-open-form="student" id="heroStudentRegisterBtn">
+            <span>Register as Student</span>
+            <span class="btn-arrow-icon">↗</span>
+          </button>
+        </div>
+
+        <!-- Option 2: School Registration -->
+        <div class="reg-choice-card reg-choice-school">
+          <div class="reg-card-content">
+            <h2 class="reg-card-title">Bring STEM to Your School.</h2>
+            <p class="reg-card-desc">
+              Give your students opportunities to explore, experiment and innovate.
+            </p>
+          </div>
+          <button type="button" class="btn-reg-action btn-reg-secondary" data-open-form="school" id="heroSchoolRegisterBtn">
+            <span>Register Your School</span>
+            <span class="btn-arrow-icon">↗</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simplified Mobile Kerala Landscape Illustration (Bottom of Mobile Hero) -->
+    <div class="mobile-hero-landscape" aria-hidden="true">
+      <svg class="mobile-ghats-svg" viewBox="0 0 400 90" preserveAspectRatio="none">
+        <path d="M0,55 Q90,20 200,45 T400,35 L400,90 L0,90 Z" fill="#003B22" opacity="0.35" />
+        <path d="M0,68 Q120,40 240,60 T400,52 L400,90 L0,90 Z" fill="#00512E" opacity="0.55" />
+      </svg>
+      <svg class="mobile-river-svg" viewBox="0 0 400 24" preserveAspectRatio="none">
+        <path d="M0,10 Q100,2 200,12 T400,8 L400,24 L0,24 Z" fill="#004D38" opacity="0.85" />
+      </svg>
+      <!-- Single elegant coconut palm silhouette on edge, never overlapping text -->
+      <svg class="mobile-palm-silhouette" viewBox="0 0 90 140" fill="none">
+        <path d="M68,140 C62,95 50,60 26,25 C24,22 28,21 30,24 C50,56 60,90 71,140 Z" fill="#003B22" />
+        <path d="M28,25 Q8,8 0,22 Q12,30 28,25 Z" fill="#00512E" />
+        <path d="M28,25 Q16,-5 32, -1 Q33,18 28,25 Z" fill="#003B22" />
+        <path d="M28,25 Q45,-8 60,8 Q44,22 28,25 Z" fill="#00512E" />
+        <path d="M28,25 Q62,12 76,28 Q52,36 28,25 Z" fill="#003B22" />
+        <path d="M28,25 Q52,36 64,56 Q40,48 28,25 Z" fill="#00512E" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. SECTION 1: EARLY BIRD REGISTRATION — EDITORIAL PROMOTIONAL BANNER
+       Modern deep green editorial banner with yellow typography.
+       Clearly highlights 20% OFF limited to first 200 registrations.
+       ========================================================================= -->
+  <section class="offer-section" id="offer">
+    <div class="section-container">
+      <div class="discount-promo-banner" id="discountPromoBanner">
+        <!-- Editorial Left/Top Column: Big 20% OFF Lockup -->
+        <div class="promo-figure-wrap">
+          <div class="promo-early-bird-tag">
+            <i class="bi bi-tag-fill" aria-hidden="true"></i>
+            <span>EARLY BIRD OFFER</span>
+          </div>
+          <div class="promo-headline-lockup">
+            <span class="promo-discount-num">20% OFF</span>
+            <span class="promo-course-target">ON OUR COURSES</span>
+          </div>
+          <div class="promo-eligibility-chip">
+            <i class="bi bi-award-fill" aria-hidden="true"></i>
+            <span>First 200 Registrations</span>
+          </div>
+        </div>
+
+        <!-- Editorial Divider Line -->
+        <div class="promo-editorial-divider" aria-hidden="true"></div>
+
+        <!-- Editorial Right/Bottom Details & Live Counter -->
+        <div class="promo-content-wrap">
+          <h2 class="promo-title">Your Ideas Deserve a Head Start.</h2>
+          <p class="promo-copy">
+            Be among the first 200 students to pre-register and unlock an exclusive 20% discount on our courses across Robotics, AI, Coding, and IoT.
+          </p>
+
+          <div class="promo-action-row">
+            <div class="offer-live-pill" id="heroEarlyBirdStatus">
+              <i class="bi bi-clock-history"></i>
+              <span id="offerSpotsRemainingText">Only <strong>75</strong> early-bird spots remaining</span>
+            </div>
+            <button type="button" class="btn-promo-action" data-open-form="student">
+              <span>Claim Early-Bird Spot</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </div>
+
+          <p class="promo-fineprint">
+            *Limited promotional offer: discount applies exclusively to the first 200 verified registrations. Standard enrollment remains open.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. SECTION 2: WHY SELECT STEM KERALA? (GROWING IDEAS IN PADDY FIELDS)
+       Metaphors connecting nature & technology
+       ========================================================================= -->
+  <section class="why-section" id="why-stem">
+    <div class="section-container">
+      <div class="section-header-wrap">
+        <h2 class="section-title">Why Select STEM Kerala?</h2>
+        <p class="section-subtitle">
+          Empowering schools and students across Kerala with purposeful, real-world technology education.
+        </p>
+      </div>
+
+      <div class="why-editorial-grid">
+        <!-- 1. Learn by Doing -->
+        <div class="why-card">
+          <!-- Subtle circuit leaf pattern embedded -->
+          <svg class="why-circuit-decor" viewBox="0 0 90 90" fill="none">
+            <path d="M10,80 C30,40 60,30 80,10 M40,55 L65,55 M55,40 L75,40" stroke="#003B22" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="80" cy="10" r="3" fill="#003B22"/>
+            <circle cx="65" cy="55" r="3" fill="#003B22"/>
+          </svg>
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="bi bi-tools"></i>
+          </div>
+          <div class="why-content">
+            <h3>1. Learn by Doing</h3>
+            <p>
+              Like nurturing a paddy sprout, real knowledge takes root when hands build practical hardware and code working circuits, instead of memorising static theory.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Future-Ready Skills -->
+        <div class="why-card">
+          <svg class="why-circuit-decor" viewBox="0 0 90 90" fill="none">
+            <path d="M10,80 C30,40 60,30 80,10 M40,55 L65,55 M55,40 L75,40" stroke="#003B22" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="80" cy="10" r="3" fill="#003B22"/>
+            <circle cx="65" cy="55" r="3" fill="#003B22"/>
+          </svg>
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div class="why-content">
+            <h3>2. Future-Ready Skills</h3>
+            <p>
+              Explore Artificial Intelligence, Coding, Robotics, IoT and emerging technologies that branch out into Kerala's next generation of engineering innovators.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Create Real Projects -->
+        <div class="why-card">
+          <svg class="why-circuit-decor" viewBox="0 0 90 90" fill="none">
+            <path d="M10,80 C30,40 60,30 80,10 M40,55 L65,55 M55,40 L75,40" stroke="#003B22" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="80" cy="10" r="3" fill="#003B22"/>
+            <circle cx="65" cy="55" r="3" fill="#003B22"/>
+          </svg>
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div class="why-content">
+            <h3>3. Create Real Projects</h3>
+            <p>
+              Planting the seeds of curiosity: turn your creative concepts into working robotic prototypes, smart sensors, and tangible inventions with real-world impact.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Think Beyond Boundaries -->
+        <div class="why-card">
+          <svg class="why-circuit-decor" viewBox="0 0 90 90" fill="none">
+            <path d="M10,80 C30,40 60,30 80,10 M40,55 L65,55 M55,40 L75,40" stroke="#003B22" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="80" cy="10" r="3" fill="#003B22"/>
+            <circle cx="65" cy="55" r="3" fill="#003B22"/>
+          </svg>
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <div class="why-content">
+            <h3>4. Think Beyond Boundaries</h3>
+            <p>
+              Cultivate fearlessness, creative debugging, and collaborative design thinking that inspire students to imagine solutions beyond the conventional horizon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. SECTION 3: ACHIEVEMENTS — PROVEN IMPACT ACROSS KERALA
+       Clean white/warm-yellow background, original authentic photographs without
+       green tint/overlays, responsive editorial grid, preserving original 3:2 proportions.
+       ========================================================================= -->
+  <section class="achievements-section" id="achievements">
+    <div class="section-container">
+      <div class="section-header-wrap">
+        <div class="section-tag-badge">
+          <i class="bi bi-trophy-fill" aria-hidden="true"></i>
+          <span>PROVEN IMPACT</span>
+        </div>
+        <h2 class="section-title">Small Ideas. Big Achievements.</h2>
+        <p class="section-subtitle">
+          Recognising our journey of innovation, creativity and real-world student impact across Kerala.
+        </p>
+      </div>
+
+      <div class="achievements-multi-viewport">
+        <div class="achievements-multi-grid">
+          <!-- Column 1 -->
+          <div class="achievements-col-track col-track-1">
+            <div class="achievement-card" data-lightbox-src="achievments/1.webp" title="Click to view full photo">
+              <img src="achievments/1.webp" alt="STEM Kerala Student Achievement 1" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/2.webp" title="Click to view full photo">
+              <img src="achievments/2.webp" alt="STEM Kerala Student Achievement 2" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/3.webp" title="Click to view full photo">
+              <img src="achievments/3.webp" alt="STEM Kerala Student Achievement 3" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/4.webp" title="Click to view full photo">
+              <img src="achievments/4.webp" alt="STEM Kerala Student Achievement 4" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/5.webp" title="Click to view full photo">
+              <img src="achievments/5.webp" alt="STEM Kerala Student Achievement 5" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/6.webp" title="Click to view full photo">
+              <img src="achievments/6.webp" alt="STEM Kerala Student Achievement 6" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/7.webp" title="Click to view full photo">
+              <img src="achievments/7.webp" alt="STEM Kerala Student Achievement 7" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/8.webp" title="Click to view full photo">
+              <img src="achievments/8.webp" alt="STEM Kerala Student Achievement 8" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+
+            <!-- Loop Clone -->
+            <div class="achievement-card" data-lightbox-src="achievments/1.webp" title="Click to view full photo">
+              <img src="achievments/1.webp" alt="STEM Kerala Student Achievement 1" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/2.webp" title="Click to view full photo">
+              <img src="achievments/2.webp" alt="STEM Kerala Student Achievement 2" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/3.webp" title="Click to view full photo">
+              <img src="achievments/3.webp" alt="STEM Kerala Student Achievement 3" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/4.webp" title="Click to view full photo">
+              <img src="achievments/4.webp" alt="STEM Kerala Student Achievement 4" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/5.webp" title="Click to view full photo">
+              <img src="achievments/5.webp" alt="STEM Kerala Student Achievement 5" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/6.webp" title="Click to view full photo">
+              <img src="achievments/6.webp" alt="STEM Kerala Student Achievement 6" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/7.webp" title="Click to view full photo">
+              <img src="achievments/7.webp" alt="STEM Kerala Student Achievement 7" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/8.webp" title="Click to view full photo">
+              <img src="achievments/8.webp" alt="STEM Kerala Student Achievement 8" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="achievements-col-track col-track-2 achievements-col-2">
+            <div class="achievement-card" data-lightbox-src="achievments/9.webp" title="Click to view full photo">
+              <img src="achievments/9.webp" alt="STEM Kerala Student Achievement 9" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/10.webp" title="Click to view full photo">
+              <img src="achievments/10.webp" alt="STEM Kerala Student Achievement 10" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/11.webp" title="Click to view full photo">
+              <img src="achievments/11.webp" alt="STEM Kerala Student Achievement 11" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/12.webp" title="Click to view full photo">
+              <img src="achievments/12.webp" alt="STEM Kerala Student Achievement 12" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/13.webp" title="Click to view full photo">
+              <img src="achievments/13.webp" alt="STEM Kerala Student Achievement 13" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/14.webp" title="Click to view full photo">
+              <img src="achievments/14.webp" alt="STEM Kerala Student Achievement 14" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/15.webp" title="Click to view full photo">
+              <img src="achievments/15.webp" alt="STEM Kerala Student Achievement 15" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/16.webp" title="Click to view full photo">
+              <img src="achievments/16.webp" alt="STEM Kerala Student Achievement 16" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+
+            <!-- Loop Clone -->
+            <div class="achievement-card" data-lightbox-src="achievments/9.webp" title="Click to view full photo">
+              <img src="achievments/9.webp" alt="STEM Kerala Student Achievement 9" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/10.webp" title="Click to view full photo">
+              <img src="achievments/10.webp" alt="STEM Kerala Student Achievement 10" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/11.webp" title="Click to view full photo">
+              <img src="achievments/11.webp" alt="STEM Kerala Student Achievement 11" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/12.webp" title="Click to view full photo">
+              <img src="achievments/12.webp" alt="STEM Kerala Student Achievement 12" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/13.webp" title="Click to view full photo">
+              <img src="achievments/13.webp" alt="STEM Kerala Student Achievement 13" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/14.webp" title="Click to view full photo">
+              <img src="achievments/14.webp" alt="STEM Kerala Student Achievement 14" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/15.webp" title="Click to view full photo">
+              <img src="achievments/15.webp" alt="STEM Kerala Student Achievement 15" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/16.webp" title="Click to view full photo">
+              <img src="achievments/16.webp" alt="STEM Kerala Student Achievement 16" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="achievements-col-track col-track-3 achievements-col-3">
+            <div class="achievement-card" data-lightbox-src="achievments/17.webp" title="Click to view full photo">
+              <img src="achievments/17.webp" alt="STEM Kerala Student Achievement 17" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/18.webp" title="Click to view full photo">
+              <img src="achievments/18.webp" alt="STEM Kerala Student Achievement 18" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/19.webp" title="Click to view full photo">
+              <img src="achievments/19.webp" alt="STEM Kerala Student Achievement 19" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/20.webp" title="Click to view full photo">
+              <img src="achievments/20.webp" alt="STEM Kerala Student Achievement 20" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/21.webp" title="Click to view full photo">
+              <img src="achievments/21.webp" alt="STEM Kerala Student Achievement 21" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/22.webp" title="Click to view full photo">
+              <img src="achievments/22.webp" alt="STEM Kerala Student Achievement 22" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/23.webp" title="Click to view full photo">
+              <img src="achievments/23.webp" alt="STEM Kerala Student Achievement 23" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/24.webp" title="Click to view full photo">
+              <img src="achievments/24.webp" alt="STEM Kerala Student Achievement 24" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+
+            <!-- Loop Clone -->
+            <div class="achievement-card" data-lightbox-src="achievments/17.webp" title="Click to view full photo">
+              <img src="achievments/17.webp" alt="STEM Kerala Student Achievement 17" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/18.webp" title="Click to view full photo">
+              <img src="achievments/18.webp" alt="STEM Kerala Student Achievement 18" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/19.webp" title="Click to view full photo">
+              <img src="achievments/19.webp" alt="STEM Kerala Student Achievement 19" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/20.webp" title="Click to view full photo">
+              <img src="achievments/20.webp" alt="STEM Kerala Student Achievement 20" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/21.webp" title="Click to view full photo">
+              <img src="achievments/21.webp" alt="STEM Kerala Student Achievement 21" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/22.webp" title="Click to view full photo">
+              <img src="achievments/22.webp" alt="STEM Kerala Student Achievement 22" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/23.webp" title="Click to view full photo">
+              <img src="achievments/23.webp" alt="STEM Kerala Student Achievement 23" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+            <div class="achievement-card" data-lightbox-src="achievments/24.webp" title="Click to view full photo">
+              <img src="achievments/24.webp" alt="STEM Kerala Student Achievement 24" class="achievement-img" loading="lazy">
+              <span class="achievement-hover-hint"><i class="bi bi-arrows-fullscreen"></i> View</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. SECTION 4: MEDIA RECOGNITION (KERALA INNOVATION BEYOND BOUNDARIES)
+       Flowing river connecting actual media logos
+       ========================================================================= -->
+  <section class="media-section" id="media">
+    <div class="section-container">
+      <div class="section-header-wrap">
+        <h2 class="section-title">STEM Kerala in the Spotlight.</h2>
+        <p class="section-subtitle">
+          Our journey and innovations have been recognised by prominent regional and national media platforms.
+        </p>
+      </div>
+
+      <div class="media-marquee-viewport">
+        <div class="media-marquee-track">
+          <!-- Set 1 -->
+          <div class="media-logo-card" data-lightbox-src="news/1.webp" title="Click to preview media coverage">
+            <img src="news/1.webp" alt="Media Coverage Feature 1" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/2.webp" title="Click to preview media coverage">
+            <img src="news/2.webp" alt="Media Coverage Feature 2" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/3.webp" title="Click to preview media coverage">
+            <img src="news/3.webp" alt="Media Coverage Feature 3" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/4.webp" title="Click to preview media coverage">
+            <img src="news/4.webp" alt="Media Coverage Feature 4" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/5.webp" title="Click to preview media coverage">
+            <img src="news/5.webp" alt="Media Coverage Feature 5" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/6.webp" title="Click to preview media coverage">
+            <img src="news/6.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/7.webp" title="Click to preview media coverage">
+            <img src="news/7.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/8.webp" title="Click to preview media coverage">
+            <img src="news/8.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/9.webp" title="Click to preview media coverage">
+            <img src="news/9.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/10.webp" title="Click to preview media coverage">
+            <img src="news/10.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/11.webp" title="Click to preview media coverage">
+            <img src="news/11.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/12.webp" title="Click to preview media coverage">
+            <img src="news/12.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/13.webp" title="Click to preview media coverage">
+            <img src="news/13.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/14.webp" title="Click to preview media coverage">
+            <img src="news/14.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/15.webp" title="Click to preview media coverage">
+            <img src="news/15.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/16.webp" title="Click to preview media coverage">
+            <img src="news/16.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/17.webp" title="Click to preview media coverage">
+            <img src="news/17.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+
+          <!-- Set 2 (Seamless loop clone) -->
+          <div class="media-logo-card" data-lightbox-src="news/1.webp" title="Click to preview media coverage">
+            <img src="news/1.webp" alt="Media Coverage Feature 1" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/2.webp" title="Click to preview media coverage">
+            <img src="news/2.webp" alt="Media Coverage Feature 2" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/3.webp" title="Click to preview media coverage">
+            <img src="news/3.webp" alt="Media Coverage Feature 3" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/4.webp" title="Click to preview media coverage">
+            <img src="news/4.webp" alt="Media Coverage Feature 4" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/5.webp" title="Click to preview media coverage">
+            <img src="news/5.webp" alt="Media Coverage Feature 5" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/6.webp" title="Click to preview media coverage">
+            <img src="news/6.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+          <div class="media-logo-card" data-lightbox-src="news/7.webp" title="Click to preview media coverage">
+            <img src="news/7.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/8.webp" title="Click to preview media coverage">
+            <img src="news/8.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/9.webp" title="Click to preview media coverage">
+            <img src="news/9.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/10.webp" title="Click to preview media coverage">
+            <img src="news/10.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/11.webp" title="Click to preview media coverage">
+            <img src="news/11.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/12.webp" title="Click to preview media coverage">
+            <img src="news/12.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/13.webp" title="Click to preview media coverage">
+            <img src="news/13.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/14.webp" title="Click to preview media coverage">
+            <img src="news/14.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/15.webp" title="Click to preview media coverage">
+            <img src="news/15.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/16.webp" title="Click to preview media coverage">
+            <img src="news/16.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+                    <div class="media-logo-card" data-lightbox-src="news/17.webp" title="Click to preview media coverage">
+            <img src="news/17.webp" alt="Media Coverage Feature 6" class="media-logo-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. SECTION 5: IMMERSIVE KERALA FOOTER (RETURNING TO KERALA'S ROOTS)
+       "KERALA THINKS DIFFERENT!"
+       "Rooted in Kerala. Built for the Future."
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">
+            <img src="logo.png" alt="STEM Kerala Logo" class="footer-logo-img">
+            <span class="footer-brand-name">STEM KERALA</span>
+          </div>
+          <p class="footer-tagline-quote">
+            KERALA THINKS DIFFERENT!
+          </p>
+          <p class="footer-sub-quote">
+            Rooted in Kerala. Built for the Future.<br>
+            Empowering curious minds to imagine, experiment, create and lead the technological revolution from God's Own Country.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#offer">20% Early Bird Offer</a></li>
+            <li><a href="#why-stem">Why STEM Kerala</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#media">Media Spotlight</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Registration</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#student-register" data-open-form="student">Student Pre-Registration</a></li>
+            <li><a href="#school-register" data-open-form="school">School Partnership</a></li>
+            <li><a href="https://whatsapp.com/channel/0029VbDoOqN8aKvLwQVT9010" target="_blank" rel="noopener noreferrer" class="footer-wa-link"><i class="bi bi-whatsapp"></i> Join Our WhatsApp Channel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col footer-contact-col">
+          <h4>Official Contact Directory</h4>
+          <ul class="footer-nav-list footer-contact-list">
+            <li>
+              <div class="footer-contact-item">
+                <span class="footer-contact-dept">General Enquiries</span>
+                <a href="mailto:hello@stemkerala.com" class="footer-mail-link">hello@stemkerala.com</a>
+                <span class="footer-contact-purpose">Questions from students, parents & public</span>
+              </div>
+            </li>
+            <li>
+              <div class="footer-contact-item">
+                <span class="footer-contact-dept">Corporate</span>
+                <a href="mailto:corporate@stemkerala.com" class="footer-mail-link">corporate@stemkerala.com</a>
+                <span class="footer-contact-purpose">Official business & administrative communication</span>
+              </div>
+            </li>
+            <li>
+              <div class="footer-contact-item">
+                <span class="footer-contact-dept">Partnerships</span>
+                <a href="mailto:partners@stemkerala.com" class="footer-mail-link">partners@stemkerala.com</a>
+                <span class="footer-contact-purpose">Business collaborations, schools & sponsorships</span>
+              </div>
+            </li>
+            <li>
+              <div class="footer-contact-item">
+                <span class="footer-contact-dept">Orders</span>
+                <a href="mailto:orders@stemkerala.com" class="footer-mail-link">orders@stemkerala.com</a>
+                <span class="footer-contact-purpose">Product orders, payments & delivery enquiries</span>
+              </div>
+            </li>
+            <li>
+              <div class="footer-contact-item">
+                <span class="footer-contact-dept">Customer Support</span>
+                <a href="mailto:support@stemkerala.com" class="footer-mail-link">support@stemkerala.com</a>
+                <span class="footer-contact-purpose">Technical issues & assistance</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-teb-link">
+          <a href="https://www.tebinnovations.in/" target="_blank" rel="noopener noreferrer">
+            <span>Powered by TEB Innovations</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="footer-copy-text">
+          <span>&copy; 2026 STEM Kerala. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       STUDENT REGISTRATION DEDICATED VIEW (Modal / Overlay)
+       ========================================================================= -->
+  <div class="form-view-container" id="studentFormView" role="dialog" aria-modal="true" aria-labelledby="studentModalTitle">
+    <div class="form-card-modal">
+      <button type="button" class="form-close-btn" aria-label="Close form">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div class="form-view-header">
+        <h2 class="form-view-title" id="studentModalTitle">Start Your STEM Journey.</h2>
+        <p class="form-view-subtitle">
+          Complete your details to become part of the STEM Kerala learning community.
+        </p>
+      </div>
+
+      <!-- Early Bird 20% Offer Banner -->
+      <div class="form-discount-banner">
+        <i class="bi bi-gift-fill" aria-hidden="true"></i>
+        <div class="form-discount-text" id="studentDiscountBannerText">
+          <strong>20% OFF — Early Bird Offer</strong>
+          Exclusive discount for the first 200 successful student registrations (<span id="studentFormSlotsRemaining">checking availability...</span>).
+        </div>
+      </div>
+
+      <!-- Student Form -->
+      <form id="studentForm" novalidate>
+        <input type="text" name="website_check" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <!-- Full Name -->
+        <div class="form-group-custom">
+          <label for="studentFullName" class="form-label-custom">
+            Full Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="studentFullName" name="fullName" class="form-control-custom" placeholder="e.g. Ananya Nair" required autocomplete="name">
+          <div class="field-error-msg" id="studentFullNameError"></div>
+        </div>
+
+        <!-- Class Grade -->
+        <div class="form-group-custom">
+          <label for="studentClass" class="form-label-custom">
+            Class / Grade <span class="req-star">*</span>
+          </label>
+          <select id="studentClass" name="studentClass" class="form-select-custom" required>
+            <option value="" disabled selected>Select your current class</option>
+            <option value="Class 1">Class 1</option>
+            <option value="Class 2">Class 2</option>
+            <option value="Class 3">Class 3</option>
+            <option value="Class 4">Class 4</option>
+            <option value="Class 5">Class 5</option>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
+            <option value="Class 9">Class 9</option>
+            <option value="Class 10">Class 10</option>
+            <option value="Class 11 (Plus One)">Class 11 (Plus One)</option>
+            <option value="Class 12 (Plus Two)">Class 12 (Plus Two)</option>
+            <option value="College / Higher Studies">College / Higher Studies</option>
+            <option value="Other">Other</option>
+          </select>
+          <div class="field-error-msg" id="studentClassError"></div>
+        </div>
+
+        <!-- Parent's Name -->
+        <div class="form-group-custom">
+          <label for="studentParentName" class="form-label-custom">
+            Parent / Guardian's Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="studentParentName" name="parentName" class="form-control-custom" placeholder="e.g. Suresh Kumar" required>
+          <div class="field-error-msg" id="studentParentError"></div>
+        </div>
+
+        <!-- Phone Number (+91) -->
+        <div class="form-group-custom">
+          <label for="studentPhone" class="form-label-custom">
+            Phone Number <span class="req-star">*</span>
+          </label>
+          <div class="input-with-prefix">
+            <span class="input-prefix-tag">+91</span>
+            <input type="tel" id="studentPhone" name="phoneNumber" class="form-control-custom" placeholder="10-digit mobile number" maxlength="10" required autocomplete="tel">
+          </div>
+          <div class="field-error-msg" id="studentPhoneError"></div>
+        </div>
+
+        <!-- School Name -->
+        <div class="form-group-custom">
+          <label for="studentSchool" class="form-label-custom">
+            School Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="studentSchool" name="schoolName" class="form-control-custom" placeholder="e.g. Kendriya Vidyalaya / Model School" required>
+          <div class="field-error-msg" id="studentSchoolError"></div>
+        </div>
+
+        <!-- District (All 14 Kerala Districts) -->
+        <div class="form-group-custom">
+          <label for="studentDistrict" class="form-label-custom">
+            District <span class="req-star">*</span>
+          </label>
+          <select id="studentDistrict" name="district" class="form-select-custom" required>
+            <option value="" disabled selected>Select Kerala district</option>
+          </select>
+          <div class="field-error-msg" id="studentDistrictError"></div>
+        </div>
+
+        <!-- Form Submission Error Banner (Displays only on network/submission failure, never clears typed input) -->
+        <div class="form-alert-error" id="studentSubmitError" style="display:none;" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <span class="error-msg-text" id="studentSubmitErrorText">Unable to submit registration right now. Please check your connection and try again.</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit-action" id="studentSubmitBtn" data-original-text="Complete Student Registration">
+          <span class="btn-text">Complete Student Registration</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCHOOL REGISTRATION DEDICATED VIEW (Modal / Overlay)
+       ========================================================================= -->
+  <div class="form-view-container" id="schoolFormView" role="dialog" aria-modal="true" aria-labelledby="schoolModalTitle">
+    <div class="form-card-modal">
+      <button type="button" class="form-close-btn" aria-label="Close form">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div class="form-view-header">
+        <h2 class="form-view-title" id="schoolModalTitle">Bring STEM to Your School.</h2>
+        <p class="form-view-subtitle">
+          Let's work together to inspire the next generation of innovators.
+        </p>
+      </div>
+
+      <!-- School Partnership Registration Active Notice -->
+      <div class="school-coming-soon-banner school-active-banner" role="status">
+        <div class="school-cs-header">
+          <i class="bi bi-check-circle-fill"></i>
+          <strong>School Registration Portal Online</strong>
+        </div>
+        <p class="school-cs-text">
+          Register your institution to bring hands-on STEM, Robotics, Coding and AI labs to your students. For institutional inquiries, write to <a href="mailto:partners@stemkerala.com" class="school-mail-link">partners@stemkerala.com</a>.
+        </p>
+      </div>
+
+      <!-- School Form -->
+      <form id="schoolForm" novalidate>
+        <input type="text" name="website_check" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <!-- School Name -->
+        <div class="form-group-custom">
+          <label for="schoolName" class="form-label-custom">
+            School Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="schoolName" name="schoolName" class="form-control-custom" placeholder="Official school name" required>
+          <div class="field-error-msg" id="schoolNameError"></div>
+        </div>
+
+        <!-- District -->
+        <div class="form-group-custom">
+          <label for="schoolDistrict" class="form-label-custom">
+            District <span class="req-star">*</span>
+          </label>
+          <select id="schoolDistrict" name="district" class="form-select-custom" required>
+            <option value="" disabled selected>Select Kerala district</option>
+          </select>
+          <div class="field-error-msg" id="schoolDistrictError"></div>
+        </div>
+
+        <!-- Mentor Name -->
+        <div class="form-group-custom">
+          <label for="schoolMentorName" class="form-label-custom">
+            Mentor / Coordinator Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="schoolMentorName" name="mentorName" class="form-control-custom" placeholder="Teacher or coordinator coordinating the programme" required>
+          <div class="field-error-msg" id="schoolMentorError"></div>
+        </div>
+
+        <!-- Mentor Phone -->
+        <div class="form-group-custom">
+          <label for="schoolMentorPhone" class="form-label-custom">
+            Mentor Phone Number <span class="req-star">*</span>
+          </label>
+          <div class="input-with-prefix">
+            <span class="input-prefix-tag">+91</span>
+            <input type="tel" id="schoolMentorPhone" name="mentorPhone" class="form-control-custom" placeholder="10-digit mobile number" maxlength="10" required>
+          </div>
+          <div class="field-error-msg" id="schoolMentorPhoneError"></div>
+        </div>
+
+        <!-- Number of Students -->
+        <div class="form-group-custom">
+          <label for="schoolStudentCount" class="form-label-custom">
+            Number of Interested Students <span class="req-star">*</span>
+          </label>
+          <input type="number" id="schoolStudentCount" name="studentCount" class="form-control-custom" placeholder="e.g. 50" min="1" required>
+          <div class="field-error-msg" id="schoolCountError"></div>
+        </div>
+
+        <!-- Principal Name -->
+        <div class="form-group-custom">
+          <label for="schoolPrincipalName" class="form-label-custom">
+            School Principal's Name <span class="req-star">*</span>
+          </label>
+          <input type="text" id="schoolPrincipalName" name="principalName" class="form-control-custom" placeholder="Principal's full name" required>
+          <div class="field-error-msg" id="schoolPrincipalError"></div>
+        </div>
+
+        <!-- Principal Contact -->
+        <div class="form-group-custom">
+          <label for="schoolPrincipalContact" class="form-label-custom">
+            School Principal's Contact Number <span class="req-star">*</span>
+          </label>
+          <div class="input-with-prefix">
+            <span class="input-prefix-tag">+91</span>
+            <input type="tel" id="schoolPrincipalContact" name="principalContact" class="form-control-custom" placeholder="10-digit mobile number" maxlength="10" required>
+          </div>
+          <div class="field-error-msg" id="schoolPrincipalPhoneError"></div>
+        </div>
+
+        <!-- School Email (Optional) -->
+        <div class="form-group-custom">
+          <label for="schoolEmail" class="form-label-custom">
+            School Email Address <span style="font-size:0.78rem; font-weight:normal; color:#174d32;">(Optional)</span>
+          </label>
+          <input type="email" id="schoolEmail" name="schoolEmail" class="form-control-custom" placeholder="school@domain.edu.in">
+        </div>
+
+        <!-- School Form Submission Error Banner -->
+        <div class="form-alert-error" id="schoolSubmitError" style="display:none;" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <span class="error-msg-text" id="schoolSubmitErrorText">Unable to submit school registration right now. Please check your connection and try again.</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit-action" id="schoolSubmitBtn" data-original-text="Submit School Registration">
+          <span class="btn-text">Submit School Registration</span>
+        </button>
+
+        <p class="form-bottom-motto">
+          "Let's build a generation of creators, thinkers and innovators together."
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CUSTOM SUCCESS POPUP
+       ========================================================================= -->
+  <div class="success-modal-backdrop" id="successModal" role="dialog" aria-modal="true">
+    <div class="success-card">
+      <div class="checkmark-circle-wrap" aria-hidden="true">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <h3 class="success-title" id="successModalTitle">You're officially on your STEM journey!</h3>
+      <p id="successModalDesc" style="color: #1a4d33; font-weight: 550; font-size: 0.96rem;">
+        Your registration details have been verified and confirmed.
+      </p>
+
+      <div class="success-reg-badge">
+        <div>
+          <div style="font-size:0.75rem; text-transform:uppercase; font-weight:700; color:#597A66;">Registration ID</div>
+          <div class="success-reg-id" id="successRegId">STEM-2026-0001</div>
+        </div>
+        <button type="button" class="btn-copy-id" id="copyRegIdBtn">Copy ID</button>
+      </div>
+
+      <div class="success-discount-tag" id="successDiscountTag">
+        ✓ 20% OFF Early Bird Confirmed
+      </div>
+
+      <!-- WhatsApp Community & Sharing Row -->
+      <div class="success-actions-wrap">
+        <a href="#" id="successWhatsappShare" target="_blank" rel="noopener noreferrer" class="btn-success-action btn-wa-share" aria-label="Share on WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+          <span>Share on WhatsApp</span>
+        </a>
+        <a href="https://whatsapp.com/channel/0029VbDoOqN8aKvLwQVT9010" id="successWhatsappChannel" target="_blank" rel="noopener noreferrer" class="btn-success-action btn-wa-channel" aria-label="Join STEM Kerala WhatsApp Channel">
+          <i class="bi bi-broadcast"></i>
+          <span>Join WhatsApp Channel</span>
+        </a>
+      </div>
+
+      <div class="success-modal-btn-row">
+        <button type="button" class="btn-secondary-modal" id="successRegisterAnotherBtn">
+          <i class="bi bi-person-plus-fill"></i>
+          <span>Register Another Student</span>
+        </button>
+        <button type="button" class="btn-done-modal" id="successDoneBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       LIGHTBOX PREVIEW MODAL FOR ACHIEVEMENTS & MEDIA
+       ========================================================================= -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content-wrap">
+      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Close preview">&times;</button>
+      <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightboxPrevBtn" aria-label="Previous image">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <img src="" alt="Full Preview" id="lightboxImg" class="lightbox-img">
+      <button type="button" class="lightbox-nav-btn lightbox-next" id="lightboxNextBtn" aria-label="Next image">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Main JavaScript Controller -->
+  <script src="script.js"></script>
+</body>
+</html>
